@@ -4,49 +4,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" /> 
 </head>
-<body>
-  <header>
-    <h1>Syed Konain Shah</h1>
+<body class="font-sans text-gray-800 bg-gray-100">
+
+  <header class="bg-blue-600 text-white p-4 shadow-md flex justify-between items-center">
+    <h1 class="text-3xl font-bold">Syed Konain Shah</h1>
     <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="flex space-x-4">
+        <li><a href="#about" class="hover:text-blue-200 transition duration-300">About</a></li>
+        <li><a href="#portfolio" class="hover:text-blue-200 transition duration-300">Portfolio</a></li>
+        <li><a href="#contact" class="hover:text-blue-200 transition duration-300">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="home">
-    <h2>Welcome to My Portfolio</h2>
-    <p>Hello! I'm Konain Shah, a beginner web developer passionate about design and code.</p>
+  <section id="home" class="py-16 text-center">
+    <h2 class="text-4xl font-extrabold text-blue-700 mb-4">Welcome to My Portfolio</h2>
+    <p class="text-lg max-w-2xl mx-auto">Hello! I'm Konain Shah, a beginner web developer passionate about design and code.</p>
   </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am learning front-end development and building websites using HTML, CSS, and JavaScript. This is my very first portfolio!</p>
+  <section id="about" class="bg-white py-12 px-4 shadow-inner">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-blue-600 mb-6">About Me</h2>
+      <p class="text-lg leading-relaxed">I am learning front-end development and building websites using HTML, CSS, and JavaScript. This is my very first portfolio!</p>
+    </div>
   </section>
 
-  <section id="portfolio">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Project 1:</strong> <a href="/audio detection.html">Audio Detection</a></li>
-      <li><strong>Project 2:</strong> <a href="/object detection.html">Object Detection</a></li>
-      
-    </ul>
+  <section id="portfolio" class="py-12 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-blue-600 mb-6">Projects</h2>
+      <ul class="list-disc pl-8 space-y-2">
+        <li><strong>Project 1:</strong> <a href="/audio detection.html" class="text-blue-500 hover:underline">Audio Detection</a></li>
+        <li><strong>Project 2:</strong> <a href="/object detection.html" class="text-blue-500 hover:underline">Object Detection</a></li>
+      </ul>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: mushtabashah8@gmail.com</p>
+  <section id="contact" class="bg-gray-200 py-12 px-4 shadow-inner">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-blue-600 mb-6">Contact Me</h2>
+      <p class="text-lg">Email: <a href="mailto:mushtabashah8@gmail.com" class="text-blue-500 hover:underline">mushtabashah8@gmail.com</a></p>
+    </div>
   </section>
 
-  <footer>
+  <footer class="bg-gray-800 text-white text-center p-4 mt-8">
     <p>&copy; 2025 Konain Shah. All rights reserved.</p>
   </footer>
   
-</body><body>
-    
 </body>
 </html>
